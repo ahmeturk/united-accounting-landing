@@ -46,7 +46,7 @@ export function SocialProof() {
             ماذا يقول عملاؤنا
           </h2>
           <p className="mt-5 text-lg leading-loose text-ink-muted">
-            ٧٥+ منشأة سعودية تعتمد على إدهام في محاسبتها اليومية. هذه بعض
+            ٧٥+ منشأة سعودية تعتمد علينا في محاسبتها اليومية. هذه بعض
             تجاربهم.
           </p>
         </div>

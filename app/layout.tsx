@@ -16,10 +16,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://idham.sa"),
+  metadataBase: new URL("https://unitedaccounting.sa"),
   title: {
-    default: "إدهام — محاسبتك تشتغل لحالها",
-    template: "%s · إدهام"
+    default: "United Accounting — معنا… حساباتك أسهل",
+    template: "%s · United Accounting"
   },
   description:
     "أول منصة محاسبية ذكية في المملكة، مبنية على الذكاء الاصطناعي ومدعومة بمحاسبين سعوديين معتمدين. متوافقة مع ZATCA Phase 2 وSOCPA.",
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     "SOCPA",
     "السعودية",
     "محاسبة سحابية",
-    "إدهام",
-    "IDHAM"
+    "United Accounting",
+    "يونايتد للمحاسبة"
   ],
   openGraph: {
-    title: "إدهام — محاسبتك تشتغل لحالها",
+    title: "United Accounting — معنا… حساباتك أسهل",
     description:
       "أول منصة محاسبية ذكية في المملكة، مبنية على الذكاء الاصطناعي ومدعومة بمحاسبين سعوديين معتمدين.",
     type: "website",

@@ -10,7 +10,7 @@ const columns: Column[] = [
   { key: "trad", label: "محاسب تقليدي" },
   { key: "saas", label: "Qoyod / Wafeq" },
   { key: "erp", label: "SAP / Odoo" },
-  { key: "idham", label: "إدهام", highlight: true }
+  { key: "ua", label: "United Accounting", highlight: true }
 ];
 
 const rows: { label: string; cells: Cell[] }[] = [
@@ -84,11 +84,11 @@ export function Comparison() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">المقارنة</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            ليش إدهام تختلف
+            ليش نختلف
           </h2>
           <p className="mt-5 text-lg leading-loose text-ink-muted">
-            أنت لا تختار بين أتمتة بسيطة أو نظام معقّد. مع إدهام، تحصل على
-            الأثنين بدون مساومة.
+            أنت لا تختار بين أتمتة بسيطة أو نظام معقّد. معنا، تحصل على
+            الاثنين بدون مساومة.
           </p>
         </div>
 

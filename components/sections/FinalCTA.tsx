@@ -38,7 +38,7 @@ export function FinalCTA() {
       >
         <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-teal-200 ring-1 ring-inset ring-white/10">
           <Calendar className="h-3.5 w-3.5" />
-          ١٥ دقيقة فقط · بدون التزام
+          معنا… حساباتك أسهل · ١٥ دقيقة فقط
         </span>
 
         <h2 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
@@ -48,7 +48,7 @@ export function FinalCTA() {
         </h2>
 
         <p className="mx-auto mt-6 max-w-2xl text-base leading-loose text-white/70 sm:text-lg">
-          احجز عرض تجريبي مجاني مع أحد متخصصينا. نوريك إدهام على بيانات حقيقية
+          احجز عرض تجريبي مجاني مع أحد متخصصينا. نوريك المنصة على بيانات حقيقية
           لمنشأة شبه منشأتك.
         </p>
 

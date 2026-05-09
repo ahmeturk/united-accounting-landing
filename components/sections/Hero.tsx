@@ -134,7 +134,7 @@ export function Hero() {
                 </div>
                 <div className="flex items-center gap-2 text-xs text-ink-muted">
                   <Sparkles className="h-3.5 w-3.5 text-teal-500" />
-                  <span>مساعد إدهام الذكي</span>
+                  <span>المساعد الذكي</span>
                 </div>
               </div>
 

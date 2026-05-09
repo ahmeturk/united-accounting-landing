@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Logo } from "@/components/Logo";
 
 const links = [
   { href: "#platform", label: "المنصة" },
@@ -34,21 +35,12 @@ export function Navigation() {
     >
       <div className="container-prose flex h-16 items-center justify-between sm:h-20">
         {/* Brand — visually first on the right in RTL */}
-        <a href="#" className="group flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-navy text-white shadow-soft transition-transform group-hover:scale-105">
-            <span className="font-bold text-lg leading-none">إ</span>
-          </div>
-          <div className="leading-tight">
-            <div className="text-lg font-bold tracking-tight text-navy">
-              إدهام
-              <span className="ms-1 font-latin text-base font-semibold text-ink">
-                IDHAM
-              </span>
-            </div>
-            <div className="text-[11px] text-ink-muted">
-              by United Accounting
-            </div>
-          </div>
+        <a
+          href="#"
+          aria-label="United Accounting — الصفحة الرئيسية"
+          className="group transition-transform hover:scale-[1.02]"
+        >
+          <Logo variant="dark" />
         </a>
 
         {/* Desktop nav */}

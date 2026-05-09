@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Logo } from "@/components/Logo";
 
 const cols = [
   {
@@ -39,17 +40,7 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-4 lg:gap-16">
           {/* Brand col */}
           <div className="col-span-2 sm:col-span-1">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-navy text-white">
-                <span className="font-bold text-lg leading-none">إ</span>
-              </div>
-              <div className="leading-tight">
-                <div className="text-lg font-bold text-navy">إدهام</div>
-                <div className="text-[11px] text-ink-muted">
-                  by United Accounting
-                </div>
-              </div>
-            </div>
+            <Logo variant="dark" />
             <p className="mt-5 text-sm leading-relaxed text-ink-muted">
               منصة محاسبية ذكية للمنشآت السعودية. مبنية في الرياض، مدعومة
               بمحاسبين سعوديين معتمدين.
@@ -81,8 +72,11 @@ export function Footer() {
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white ring-1 ring-navy/5">
               <Mail className="h-4 w-4 text-teal-600" />
             </span>
-            <a href="mailto:hello@idham.sa" className="font-medium hover:underline">
-              hello@idham.sa
+            <a
+              href="mailto:hello@unitedaccounting.sa"
+              className="font-medium hover:underline"
+            >
+              hello@unitedaccounting.sa
             </a>
           </div>
           <div className="flex items-center gap-3 text-sm text-navy">
