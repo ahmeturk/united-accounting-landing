@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255 255 255;
+  --foreground: 26 26 26;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    line-height: 1.7; /* generous line-height for Arabic */
+    font-feature-settings: "kern", "liga", "calt", "ss01";
+  }
+
+  /* Arabic numerals & latin tabular */
+  .num-tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Headlines tighten leading; Arabic still readable at 1.25-1.4 */
+  h1, h2, h3, h4 {
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: rgba(20, 184, 166, 0.25);
+    color: #0B1E3F;
+  }
+
+  /* Focus ring tuned for both directions */
+  :focus-visible {
+    outline: 2px solid #14B8A6;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  .container-prose {
+    @apply container max-w-7xl;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-teal-50 px-3 py-1 text-xs font-medium text-teal-700 ring-1 ring-inset ring-teal-100;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 focus-visible:outline-none;
+  }
+
+  .btn-primary {
+    @apply btn bg-teal-500 text-white shadow-soft hover:bg-teal-600 hover:shadow-glow active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-navy ring-1 ring-navy/15 hover:ring-navy/30 hover:bg-navy-50;
+  }
+
+  .btn-ghost {
+    @apply btn text-navy hover:bg-navy-50;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white ring-1 ring-navy/5 shadow-soft transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-0.5 hover:shadow-lift hover:ring-navy/10;
+  }
+
+  /* Section padding scale */
+  .section {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  /* Soft divider */
+  .hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-navy/10 to-transparent;
+  }
+}
+
+@layer utilities {
+  /* Eastern Arabic numerals helper */
+  .nums-ar {
+    font-feature-settings: "kern", "liga";
+    unicode-bidi: plaintext;
+  }
+
+  /* Soft dot grid background for hero */
+  .bg-dots {
+    background-image: radial-gradient(rgba(11, 30, 63, 0.08) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Shine hover for pricing card */
+  .shine {
+    position: relative;
+    overflow: hidden;
+  }
+  .shine::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      115deg,
+      transparent 30%,
+      rgba(20, 184, 166, 0.12) 50%,
+      transparent 70%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+    pointer-events: none;
+  }
+  .shine:hover::after {
+    transform: translateX(100%);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
