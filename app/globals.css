@@ -48,8 +48,14 @@
     @apply container max-w-7xl;
   }
 
+  /* Default eyebrow — small pill */
   .eyebrow {
     @apply inline-flex items-center gap-2 rounded-full bg-teal-50 px-3 py-1 text-xs font-medium text-teal-700 ring-1 ring-inset ring-teal-100;
+  }
+
+  /* Editorial eyebrow — tracked-out monospace technical label */
+  .eyebrow-editorial {
+    @apply inline-flex items-center gap-2 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-clay-500;
   }
 
   .btn {
@@ -57,23 +63,27 @@
   }
 
   .btn-primary {
-    @apply btn bg-teal-500 text-white shadow-soft hover:bg-teal-600 hover:shadow-glow active:scale-[0.98];
+    @apply btn bg-navy text-ivory-50 shadow-warm-soft hover:bg-navy-700 hover:shadow-warm-lift active:scale-[0.98];
+  }
+
+  .btn-accent {
+    @apply btn bg-clay-500 text-ivory-50 shadow-warm-soft hover:bg-clay-700 hover:shadow-warm-glow active:scale-[0.98];
   }
 
   .btn-secondary {
-    @apply btn bg-white text-navy ring-1 ring-navy/15 hover:ring-navy/30 hover:bg-navy-50;
+    @apply btn bg-ivory-100 text-navy ring-1 ring-navy/15 hover:ring-navy/30 hover:bg-ivory-200;
   }
 
   .btn-ghost {
-    @apply btn text-navy hover:bg-navy-50;
+    @apply btn text-navy hover:bg-ivory-200;
   }
 
   .card {
-    @apply rounded-2xl bg-white ring-1 ring-navy/5 shadow-soft transition-all duration-300;
+    @apply rounded-2xl bg-ivory-50 ring-1 ring-ink/5 shadow-warm-soft transition-all duration-300;
   }
 
   .card-hover {
-    @apply hover:-translate-y-0.5 hover:shadow-lift hover:ring-navy/10;
+    @apply hover:-translate-y-0.5 hover:shadow-warm-lift hover:ring-ink/10;
   }
 
   /* Section padding scale */
@@ -83,7 +93,12 @@
 
   /* Soft divider */
   .hairline {
-    @apply h-px w-full bg-gradient-to-r from-transparent via-navy/10 to-transparent;
+    @apply h-px w-full bg-gradient-to-r from-transparent via-ink/10 to-transparent;
+  }
+
+  /* Editorial accent rule — draws in on scroll, used for section headers */
+  .rule-accent {
+    @apply h-px w-16 origin-right bg-clay-500;
   }
 }
 
@@ -94,10 +109,32 @@
     unicode-bidi: plaintext;
   }
 
+  /* Tabular figures in mono — for KPIs and price displays */
+  .num-mono {
+    font-family: var(--font-jbm), ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum", "ss01";
+    unicode-bidi: plaintext;
+  }
+
   /* Soft dot grid background for hero */
   .bg-dots {
-    background-image: radial-gradient(rgba(11, 30, 63, 0.08) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(45, 30, 15, 0.07) 1px, transparent 1px);
     background-size: 22px 22px;
+  }
+
+  /* Najdi-inspired hairline grid — dominant atmospheric texture for ivory canvases */
+  .bg-najdi {
+    background-image:
+      linear-gradient(to right, rgba(26, 24, 18, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(26, 24, 18, 0.045) 1px, transparent 1px);
+    background-size: 88px 88px;
+  }
+
+  /* Paper-grain texture — sub-perceptible noise on cards */
+  .bg-grain {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.15 0 0 0 0 0.10 0 0 0 0.5 0'/></filter><rect width='160' height='160' filter='url(%23n)' opacity='0.5'/></svg>");
+    background-size: 160px 160px;
   }
 
   /* Shine hover for pricing card */

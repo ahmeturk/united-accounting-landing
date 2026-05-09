@@ -1,5 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans_Arabic, Inter } from "next/font/google";
+import {
+  IBM_Plex_Sans_Arabic,
+  IBM_Plex_Sans,
+  Fraunces,
+  JetBrains_Mono
+} from "next/font/google";
 import "./globals.css";
 
 const plexArabic = IBM_Plex_Sans_Arabic({
@@ -9,9 +14,26 @@ const plexArabic = IBM_Plex_Sans_Arabic({
   display: "swap"
 });
 
-const inter = Inter({
+const plexLatin = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-plex-latin",
+  display: "swap"
+});
+
+// Editorial display serif — variable font, used for English numerals/accents.
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-fraunces",
+  display: "swap"
+});
+
+// Tabular figures + technical labels — the "futuristic precision" cue
+const jbm = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-jbm",
   display: "swap"
 });
 
@@ -58,9 +80,9 @@ export default function RootLayout({
     <html
       lang="ar"
       dir="rtl"
-      className={`${plexArabic.variable} ${inter.variable}`}
+      className={`${plexArabic.variable} ${plexLatin.variable} ${fraunces.variable} ${jbm.variable}`}
     >
-      <body className="bg-white text-ink antialiased font-sans">
+      <body className="bg-ivory-100 text-ink antialiased font-sans">
         {children}
       </body>
     </html>
