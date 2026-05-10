@@ -96,12 +96,12 @@ export function Comparison() {
             </div>
 
             {/* UA column header — always teal-highlighted */}
-            <div className="relative bg-teal-500/5 px-5 py-5 text-center">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 rounded-full bg-teal-500 px-2.5 py-0.5 text-[10px] font-bold text-white shadow-warm-soft whitespace-nowrap">
+            <div className="bg-teal-500/5 px-5 py-5 text-center">
+              <span className="inline-flex items-center gap-1 rounded-full bg-teal-500 px-2.5 py-0.5 text-[10px] font-bold text-white shadow-warm-soft whitespace-nowrap">
                 <Sparkles className="h-3 w-3" />
                 نحن
               </span>
-              <div className="text-sm font-bold text-navy">إدهام</div>
+              <div className="mt-2 text-sm font-bold text-navy">إدهام</div>
             </div>
 
             {/* Active competitor column header */}

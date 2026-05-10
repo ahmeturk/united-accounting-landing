@@ -83,19 +83,30 @@ export function Pricing() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className={cn(
-                "relative flex flex-col rounded-3xl bg-ivory-50 p-8 ring-1 transition-all shine",
-                t.highlight
-                  ? "ring-2 ring-teal-500 shadow-warm-lift lg:scale-[1.04] lg:-mt-2"
-                  : "ring-ink/10 shadow-warm-soft hover:shadow-warm-lift hover:-translate-y-0.5"
+                "relative",
+                t.highlight && "lg:scale-[1.04] lg:-mt-2"
               )}
             >
+              {/*
+                Badge sits on the OUTER wrapper (no overflow boundary here)
+                so it can extend above the inner card's rounded edge without
+                being clipped by `.shine`'s overflow-hidden.
+              */}
               {t.highlight && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 rounded-full bg-teal-500 px-4 py-1.5 text-xs font-bold text-white shadow-glow whitespace-nowrap">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 rounded-full bg-teal-500 px-4 py-1.5 text-xs font-bold text-white shadow-glow whitespace-nowrap">
                   <Sparkles className="h-3.5 w-3.5" />
                   ★ الأكثر طلباً
                 </div>
               )}
 
+              <div
+                className={cn(
+                  "relative flex flex-col rounded-3xl bg-ivory-50 p-8 ring-1 transition-all shine h-full",
+                  t.highlight
+                    ? "ring-2 ring-teal-500 shadow-warm-lift"
+                    : "ring-ink/10 shadow-warm-soft hover:shadow-warm-lift hover:-translate-y-0.5"
+                )}
+              >
               <h3
                 className={cn(
                   "text-xl font-bold",
@@ -151,11 +162,12 @@ export function Pricing() {
                 {t.cta}
                 <ArrowLeft className="h-4 w-4" />
               </a>
+              </div>
             </motion.div>
           ))}
         </div>
 
-        <p className="mt-10 text-center font-mono text-[11px] uppercase tracking-[0.18em] text-ink-subtle">
+        <p className="mt-10 text-center font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-ink-subtle">
           VAT not included · Cancel anytime
         </p>
       </div>
