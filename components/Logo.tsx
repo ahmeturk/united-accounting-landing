@@ -1,12 +1,14 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Idham brand mark — stepped tower silhouette referencing Najdi mud-brick
- * architecture (e.g. Diriyah). Two stacked rounded blocks, the smaller
- * perched atop and offset toward the start side. Reads simultaneously
- * as architectural form and as modular "data blocks."
+ * Idham brand mark — stylized "إ" letterform: a single confident vertical
+ * stroke (the alif body) with a small filled circle below (the hamza).
+ * Directly references the brand-name's signature letter, monochromatic,
+ * scales to any size. Uses `currentColor` for inversion on dark/light.
  *
- * Uses `currentColor` so it inverts cleanly on dark/light surfaces.
+ * Use this for favicon, app icon, social share image, or anywhere the
+ * full wordmark won't fit. The default <Logo/> exports the wordmark
+ * since the marketing page wants the brand name to do the work.
  */
 export function Monogram({
   className,
@@ -24,54 +26,63 @@ export function Monogram({
       fill="currentColor"
     >
       <title>{title}</title>
-      {/* Larger lower block */}
-      <rect x="10" y="30" width="42" height="22" rx="4" />
-      {/* Upper block — offset toward the start (right in RTL) */}
-      <rect x="30" y="12" width="22" height="18" rx="4" />
+      {/* Alif body — vertical stroke */}
+      <rect x="28" y="12" width="8" height="34" rx="2" />
+      {/* Hamza dot — small filled circle below */}
+      <circle cx="32" cy="53" r="3.5" />
     </svg>
   );
 }
 
 type LogoProps = {
-  /** "dark" = white mark on navy plate, "light" = navy mark on white plate */
-  variant?: "dark" | "light";
-  showWordmark?: boolean;
+  /** Show the small Arabic tagline under the wordmark */
   showTagline?: boolean;
+  /** Render only the monogram in a navy plate — for tight spaces / icon contexts */
+  iconOnly?: boolean;
   className?: string;
 };
 
+/**
+ * Idham logo — pure wordmark by default (Deloitte-style: bold name + single
+ * accent dot, no plate). The wordmark *is* the brand element.
+ *
+ * Set `iconOnly` to render just the monogram-on-navy-plate (favicon contexts).
+ */
 export function Logo({
-  variant = "dark",
-  showWordmark = true,
   showTagline = true,
+  iconOnly = false,
   className
 }: LogoProps) {
-  const plateClasses =
-    variant === "dark"
-      ? "bg-navy text-white"
-      : "bg-white text-navy ring-1 ring-navy/10";
-
-  return (
-    <div className={cn("flex items-center gap-3", className)}>
+  if (iconOnly) {
+    return (
       <div
         className={cn(
-          "flex h-11 w-11 flex-none items-center justify-center rounded-xl shadow-warm-soft transition-transform",
-          plateClasses
+          "flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-navy text-white shadow-warm-soft",
+          className
         )}
       >
         <Monogram className="h-6 w-6" />
       </div>
+    );
+  }
 
-      {showWordmark && (
-        <div className="leading-tight">
-          <div className="text-xl font-bold tracking-tight text-navy">
-            إدهام
-          </div>
-          {showTagline && (
-            <div className="text-[11px] text-ink-muted mt-0.5">
-              معنا… حساباتك أسهل
-            </div>
-          )}
+  return (
+    <div className={cn("leading-tight", className)}>
+      {/* Wordmark: heavy إدهام + clay terminal dot.
+          flex with default direction in RTL puts the wordmark on the
+          right and the dot on the left (= after the word in reading order). */}
+      <div className="flex items-end gap-1.5">
+        <span className="text-2xl font-bold tracking-tight text-navy leading-none">
+          إدهام
+        </span>
+        <span
+          aria-hidden
+          className="mb-1.5 h-2.5 w-2.5 rounded-full bg-clay-500"
+        />
+      </div>
+      {showTagline && (
+        <div className="mt-1.5 text-[11px] text-ink-muted">
+          معنا… حساباتك أسهل
         </div>
       )}
     </div>

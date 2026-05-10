@@ -40,7 +40,7 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-4 lg:gap-16">
           {/* Brand col */}
           <div className="col-span-2 sm:col-span-1">
-            <Logo variant="dark" />
+            <Logo />
           </div>
 
           {cols.map((c) => (

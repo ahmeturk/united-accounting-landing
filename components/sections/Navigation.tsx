@@ -40,7 +40,7 @@ export function Navigation() {
           aria-label="إدهام — الصفحة الرئيسية"
           className="group transition-transform hover:scale-[1.02]"
         >
-          <Logo variant="dark" />
+          <Logo showTagline={false} />
         </a>
 
         {/* Desktop nav */}

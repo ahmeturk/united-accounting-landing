@@ -20,7 +20,7 @@ export default function LoginPage() {
             aria-label="إدهام — الصفحة الرئيسية"
             className="transition-transform hover:scale-[1.02]"
           >
-            <Logo variant="dark" showTagline={false} />
+            <Logo showTagline={false} />
           </Link>
           <Link
             href="/"
