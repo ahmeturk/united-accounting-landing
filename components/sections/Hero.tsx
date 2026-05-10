@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowLeft, Sparkles, ArrowUpRight, LogIn } from "lucide-react";
+import { ArrowLeft, Sparkles, ArrowUpRight } from "lucide-react";
 import { CountUp } from "@/components/CountUp";
 
 export function Hero() {
@@ -70,19 +70,15 @@ function CopyBlock() {
         محاسبة سعودية بذكاء اصطناعي، يدعمها محاسبون معتمدون.
       </motion.p>
 
-      {/* CTAs — Login first, signals active platform */}
+      {/* Single CTA — Login lives in the nav, this calls new visitors */}
       <motion.div
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
         className="mt-10 flex flex-wrap items-center gap-3"
       >
-        <a href="#login" className="btn-primary">
-          <LogIn className="h-4 w-4" />
-          تسجيل الدخول
-        </a>
-        <a href="#signup" className="btn-ghost group">
-          <span>حساب جديد</span>
+        <a href="#signup" className="btn-accent group">
+          ابدأ حسابك
           <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
         </a>
       </motion.div>
