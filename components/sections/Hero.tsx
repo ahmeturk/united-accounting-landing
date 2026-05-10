@@ -48,26 +48,26 @@ function CopyBlock() {
         transition={{ duration: 0.7 }}
         className="text-[2.75rem] font-semibold leading-[1.1] tracking-tight text-navy sm:text-6xl lg:text-[4.75rem]"
       >
-        محاسبتك
+        كل أرقامك.
         <br />
+        تحت{" "}
         <span className="relative inline-block">
-          تشتغل
+          إيدك.
           <span
             className="absolute -bottom-2 left-0 right-0 h-[3px] origin-right rounded-full bg-clay-500/80"
             aria-hidden
           />
-        </span>{" "}
-        لحالها.
+        </span>
       </motion.h1>
 
-      {/* Subhead — single confident line */}
+      {/* Subhead */}
       <motion.p
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
         className="mt-6 max-w-xl text-lg text-ink-muted sm:text-xl"
       >
-        محاسبة سعودية بدعم الذكاء الاصطناعي.
+        محاسبة سعودية بذكاء اصطناعي، يدعمها محاسبون معتمدون.
       </motion.p>
 
       {/* CTAs — Login first, signals active platform */}
