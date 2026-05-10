@@ -21,13 +21,9 @@ export function TrustBar() {
   return (
     <section className="relative bg-sand-50 py-14 sm:py-16">
       <div className="container-prose">
-        <p className="text-center text-sm font-medium uppercase tracking-wide text-ink-muted">
-          تثق فينا أكثر من <span className="text-navy font-bold">٧٥</span> منشأة سعودية
-        </p>
-
         {/* Logo strip — duplicated for seamless marquee */}
         <div
-          className="mt-8 overflow-hidden"
+          className="overflow-hidden"
           style={{
             maskImage:
               "linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)",

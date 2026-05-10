@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/sections/Navigation";
 import { Hero } from "@/components/sections/Hero";
+import { StatsBand } from "@/components/sections/StatsBand";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { Problem } from "@/components/sections/Problem";
 import { Solution } from "@/components/sections/Solution";
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Navigation />
       <main>
         <Hero />
+        <StatsBand />
         <TrustBar />
         <Problem />
         <Solution />

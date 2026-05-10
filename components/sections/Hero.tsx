@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowLeft, Sparkles, ArrowUpRight, LogIn } from "lucide-react";
+import { CountUp } from "@/components/CountUp";
 
 export function Hero() {
   return (
@@ -93,8 +93,6 @@ function CopyBlock() {
 /* ─────────────── OPERATING CONSOLE ─────────────── */
 
 function OperatingConsole() {
-  const reduce = useReducedMotion();
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 24, scale: 0.98 }}
@@ -142,7 +140,12 @@ function OperatingConsole() {
           </div>
 
           <div className="mt-3 flex items-baseline gap-2">
-            <CountUp value={47200} reduce={!!reduce} />
+            <CountUp
+              value={47200}
+              trigger="mount"
+              delay={600}
+              className="text-5xl font-semibold tracking-tight text-navy sm:text-6xl"
+            />
             <span className="text-2xl font-semibold text-ink-muted">ر.س</span>
           </div>
           <div className="mt-1 text-xs text-ink-subtle">
@@ -207,43 +210,6 @@ function Kpi({
         {label}
       </div>
     </div>
-  );
-}
-
-/* Animated count-up using Eastern Arabic numerals */
-function CountUp({ value, reduce }: { value: number; reduce: boolean }) {
-  const [n, setN] = useState(reduce ? value : 0);
-
-  useEffect(() => {
-    if (reduce) return;
-    const start = performance.now();
-    const duration = 1400;
-    let raf = 0;
-    const tick = (t: number) => {
-      const p = Math.min(1, (t - start) / duration);
-      // ease-out-quart
-      const eased = 1 - Math.pow(1 - p, 4);
-      setN(Math.round(value * eased));
-      if (p < 1) raf = requestAnimationFrame(tick);
-    };
-    const delay = setTimeout(() => {
-      raf = requestAnimationFrame(tick);
-    }, 600);
-    return () => {
-      clearTimeout(delay);
-      cancelAnimationFrame(raf);
-    };
-  }, [value, reduce]);
-
-  // Eastern Arabic digits with thousand separator
-  const formatted = n
-    .toLocaleString("ar-SA")
-    .replace(/[0-9]/g, (d) => "٠١٢٣٤٥٦٧٨٩"[Number(d)]);
-
-  return (
-    <span className="num-mono text-5xl font-semibold tracking-tight text-navy sm:text-6xl">
-      {formatted}
-    </span>
   );
 }
 
