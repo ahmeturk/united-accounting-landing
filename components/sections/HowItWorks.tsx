@@ -7,22 +7,19 @@ const steps = [
   {
     icon: Plug,
     n: "١",
-    title: "تربط حساباتك البنكية ونظام فواتيرك",
-    body: "خمس دقائق وحساباتك متصلة. ندعم البنوك السعودية الكبرى وأنظمة POS الشائعة.",
+    title: "اربط بنكك وفواتيرك",
     micro: "٥ دقائق"
   },
   {
     icon: Bot,
     n: "٢",
-    title: "الذكاء الاصطناعي يبدأ يصنف ويسجل تلقائياً",
-    body: "كل عملية تتصنّف، كل فاتورة تتقرأ، وكل تسوية بنكية تحدث بدون تدخل منك.",
+    title: "AI يصنّف ويسجّل تلقائياً",
     micro: "تلقائي"
   },
   {
     icon: BarChart3,
     n: "٣",
-    title: "تستلم تقاريرك لحظياً، ومحاسبك متاح متى احتجته",
-    body: "افتح التطبيق، شف ربحيتك، تدفقاتك النقدية، وحالة إقراراتك. كلّم محاسبك بضغطة.",
+    title: "تقاريرك لحظية. محاسبك متاح.",
     micro: "لحظي"
   }
 ];
@@ -34,11 +31,8 @@ export function HowItWorks() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">كيف تشتغل</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            من الصفر للتشغيل في يومين
+            من الصفر للتشغيل في يومين.
           </h2>
-          <p className="mt-5 text-lg leading-loose text-ink-muted">
-            ثلاث خطوات. لا تنصيب، لا تعقيد، لا تدريب طويل.
-          </p>
         </div>
 
         <div className="relative mt-16">
@@ -73,9 +67,6 @@ export function HowItWorks() {
                   <h3 className="mt-4 text-lg font-bold leading-snug text-navy">
                     {s.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink-muted">
-                    {s.body}
-                  </p>
 
                   <span className="mt-6 inline-flex items-center gap-1.5 rounded-full bg-navy-50 px-3 py-1 text-xs font-medium text-navy">
                     <span className="h-1.5 w-1.5 rounded-full bg-teal-500" />

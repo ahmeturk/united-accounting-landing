@@ -13,39 +13,39 @@ import {
 const features = [
   {
     icon: ScanLine,
-    title: "محاسبة ذاتية ذكية",
+    title: "محاسبة ذاتية",
     badge: "AI",
-    body: "OCR لكل فاتورة، تصنيف تلقائي، ومطابقة بنكية دقيقة بدون إدخال يدوي."
+    body: "OCR · تصنيف تلقائي · مطابقة بنكية."
   },
   {
     icon: Receipt,
     title: "ZATCA Phase 2",
     badge: "متوافق",
-    body: "إصدار فاتورة إلكترونية موقّعة وإقرارات ضريبية مهيأة وجاهزة للإرسال."
+    body: "فواتير موقّعة. إقرارات جاهزة."
   },
   {
     icon: MessageSquareText,
-    title: "مستشار مالي بالعربي",
+    title: "مستشار بالعربي",
     badge: "محادثة",
-    body: "تكلّم مع بياناتك بالعربية السعودية. اسأل أي سؤال، يجاوبك بأرقام دقيقة."
+    body: "اسأل بياناتك. تجاوبك بأرقام."
   },
   {
     icon: Database,
-    title: "عمق ERP حقيقي",
+    title: "عمق ERP",
     badge: "مؤسسي",
-    body: "إدارة مخزون، مراكز تكلفة، فروع متعددة، وتقارير ربحية على كل مستوى."
+    body: "مخزون · مراكز تكلفة · فروع."
   },
   {
     icon: Building2,
     title: "تكاملات حكومية",
     badge: "مدمج",
-    body: "تكامل مباشر مع GOSI، مدد، قوى، ومقيم — ومزامنة لحظية للموظفين."
+    body: "GOSI · مدد · قوى · مقيم."
   },
   {
     icon: Users,
     title: "محاسبون SOCPA",
     badge: "بشري",
-    body: "Human-in-the-loop عند الطلب. محاسب سعودي معتمد جاهز يرد عليك."
+    body: "محاسب معتمد جاهز للرد."
   }
 ];
 
@@ -56,12 +56,8 @@ export function Features() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">المميزات</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            كل اللي تحتاجه لإدارة محاسبتك
+            كل ما تحتاجه. في منصة واحدة.
           </h2>
-          <p className="mt-5 text-lg leading-loose text-ink-muted">
-            منصة واحدة تجمع الأتمتة، الامتثال، والذكاء الاصطناعي — مصممة من
-            الصفر للمنشآت السعودية.
-          </p>
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

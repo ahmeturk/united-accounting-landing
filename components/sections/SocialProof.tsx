@@ -5,8 +5,7 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote:
-      "وفّرت ٤٠٪ من وقت محاسبتنا في أول شهرين. وأهم شي، إقرار ZATCA يطلع جاهز بدون ما أتابع.",
+    quote: "وفّرنا ٤٠٪ من وقت المحاسبة. ZATCA يطلع جاهز بدون متابعة.",
     name: "خالد العتيبي",
     role: "المالك",
     company: "مطاعم البيت السعودي",
@@ -15,8 +14,7 @@ const testimonials = [
     stars: 5
   },
   {
-    quote:
-      "كنت أنتظر تقرير الشهر ١٥ يوم. الحين أفتح الجوال وأشوف ربحية كل فرع لحظياً. غيّر طريقة قراراتي.",
+    quote: "تقرير الشهر صار لحظي. أشوف ربحية كل فرع من جوالي.",
     name: "نورة الشهري",
     role: "المديرة المالية",
     company: "متاجر لمسة",
@@ -25,8 +23,7 @@ const testimonials = [
     stars: 5
   },
   {
-    quote:
-      "اللي عجبني إن المحاسب البشري متاح. جاوبني على استشارة ضريبية معقدة في نفس اليوم. خدمة محترمة.",
+    quote: "محاسب معتمد يرد عليّ في نفس اليوم. خدمة محترمة.",
     name: "عبدالعزيز الدوسري",
     role: "الشريك الإداري",
     company: "مكتب الدوسري للمقاولات",
@@ -43,12 +40,8 @@ export function SocialProof() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">آراء العملاء</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            ماذا يقول عملاؤنا
+            ٧٥+ منشأة. صفر تأخير.
           </h2>
-          <p className="mt-5 text-lg leading-loose text-ink-muted">
-            ٧٥+ منشأة سعودية تعتمد علينا في محاسبتها اليومية. هذه بعض
-            تجاربهم.
-          </p>
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">

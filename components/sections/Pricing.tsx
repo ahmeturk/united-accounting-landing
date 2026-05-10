@@ -17,7 +17,7 @@ type Tier = {
 const tiers: Tier[] = [
   {
     name: "الانطلاق",
-    audience: "للمنشآت الناشئة وأصحاب الأعمال الفردية",
+    audience: "للأعمال الناشئة والفردية",
     price: "٤٩٩",
     unit: "ر.س / شهرياً",
     features: [
@@ -32,7 +32,7 @@ const tiers: Tier[] = [
   },
   {
     name: "النمو",
-    audience: "للمنشآت الصغيرة والمتوسطة المتنامية",
+    audience: "للمنشآت المتنامية",
     price: "١,٤٩٩",
     unit: "ر.س / شهرياً",
     features: [
@@ -48,7 +48,7 @@ const tiers: Tier[] = [
   },
   {
     name: "المؤسسات",
-    audience: "للمجموعات والشركات متعددة الكيانات",
+    audience: "للمجموعات متعددة الكيانات",
     price: "تواصل",
     unit: "تسعير مخصص",
     features: [
@@ -70,12 +70,8 @@ export function Pricing() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">الباقات</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            تسعير واضح ينمو معك
+            تسعير واضح. ينمو معك.
           </h2>
-          <p className="mt-5 text-lg leading-loose text-ink-muted">
-            ابدأ بتجربة مجانية ١٤ يوم. بدون بطاقة ائتمان. ترقّى أو نزّل في أي
-            وقت.
-          </p>
         </div>
 
         <div className="mt-14 grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3 lg:gap-5">
@@ -159,8 +155,8 @@ export function Pricing() {
           ))}
         </div>
 
-        <p className="mt-10 text-center text-xs text-ink-subtle">
-          الأسعار لا تشمل ضريبة القيمة المضافة · يمكن إلغاء الاشتراك في أي وقت
+        <p className="mt-10 text-center font-mono text-[11px] uppercase tracking-[0.18em] text-ink-subtle">
+          VAT not included · Cancel anytime
         </p>
       </div>
     </section>

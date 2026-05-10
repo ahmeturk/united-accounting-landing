@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowLeft, PlayCircle, Sparkles, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, Sparkles, ArrowUpRight, LogIn } from "lucide-react";
 
 export function Hero() {
   return (
@@ -41,23 +41,12 @@ export function Hero() {
 function CopyBlock() {
   return (
     <>
-      {/* Editorial eyebrow — tracked-out monospace technical label */}
-      <motion.div
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="flex items-center gap-3"
-      >
-        <span className="h-px w-10 bg-clay-500" aria-hidden />
-        <span className="eyebrow-editorial">EST. 2024 — RIYADH · KSA</span>
-      </motion.div>
-
       {/* Headline */}
       <motion.h1
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.08 }}
-        className="mt-7 text-[2.75rem] font-semibold leading-[1.1] tracking-tight text-navy sm:text-6xl lg:text-[4.75rem]"
+        transition={{ duration: 0.7 }}
+        className="text-[2.75rem] font-semibold leading-[1.1] tracking-tight text-navy sm:text-6xl lg:text-[4.75rem]"
       >
         محاسبتك
         <br />
@@ -71,60 +60,33 @@ function CopyBlock() {
         لحالها.
       </motion.h1>
 
-      {/* Subhead — tighter, declarative, proof-anchored */}
+      {/* Subhead — single confident line */}
       <motion.p
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.18 }}
-        className="mt-7 max-w-xl text-lg leading-loose text-ink-muted sm:text-xl"
+        transition={{ duration: 0.7, delay: 0.1 }}
+        className="mt-6 max-w-xl text-lg text-ink-muted sm:text-xl"
       >
-        منصة محاسبية سعودية بقدرات الذكاء الاصطناعي، مدعومة بمحاسبين معتمدين
-        من <span className="font-mono text-base">SOCPA</span>. متوافقة بالكامل
-        مع <span className="font-mono text-base">ZATCA Phase 2</span>.
+        محاسبة سعودية بدعم الذكاء الاصطناعي.
       </motion.p>
 
-      {/* CTAs */}
+      {/* CTAs — Login first, signals active platform */}
       <motion.div
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.28 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
         className="mt-10 flex flex-wrap items-center gap-3"
       >
-        <a href="#contact" className="btn-accent">
-          ابدأ تجربة مجانية
-          <ArrowLeft className="h-4 w-4" />
+        <a href="#login" className="btn-primary">
+          <LogIn className="h-4 w-4" />
+          تسجيل الدخول
         </a>
-        <a href="#how" className="btn-secondary">
-          <PlayCircle className="h-4 w-4" />
-          شاهد العرض التفاعلي
+        <a href="#signup" className="btn-ghost group">
+          <span>حساب جديد</span>
+          <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
         </a>
-      </motion.div>
-
-      {/* Editorial credibility strip — meta info presented like a print masthead */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.7, delay: 0.45 }}
-        className="mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-ink/10 pt-6"
-      >
-        <Stat label="منشأة سعودية" value="٧٥+" />
-        <span className="hidden sm:block h-6 w-px bg-ink/10" aria-hidden />
-        <Stat label="إقرار ZATCA شهرياً" value="٢١٠+" />
-        <span className="hidden sm:block h-6 w-px bg-ink/10" aria-hidden />
-        <Stat label="دقة الترحيل" value="٩٩.٤٪" />
       </motion.div>
     </>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="leading-tight">
-      <div className="num-mono text-2xl font-semibold text-navy">{value}</div>
-      <div className="text-xs uppercase tracking-wider text-ink-subtle mt-1">
-        {label}
-      </div>
-    </div>
   );
 }
 

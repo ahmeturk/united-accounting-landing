@@ -84,12 +84,8 @@ export function Comparison() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">المقارنة</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            ليش نختلف
+            ليش نختلف.
           </h2>
-          <p className="mt-5 text-lg leading-loose text-ink-muted">
-            أنت لا تختار بين أتمتة بسيطة أو نظام معقّد. معنا، تحصل على
-            الاثنين بدون مساومة.
-          </p>
         </div>
 
         <motion.div

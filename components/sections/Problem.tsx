@@ -6,26 +6,22 @@ import { Clock, AlertTriangle, FileClock, EyeOff } from "lucide-react";
 const pains = [
   {
     icon: Clock,
-    title: "محاسب يقعد ساعات عشان يدخل فواتير",
-    body: "إدخال يدوي لكل فاتورة، ومطابقة بنكية تستهلك أيام من وقت فريقك.",
+    title: "ساعات في إدخال فواتير يدوي",
     accent: "from-rose-50 to-rose-100"
   },
   {
     icon: AlertTriangle,
-    title: "تأخر إقرار ZATCA = غرامة محتملة ٥٠,٠٠٠ ر.س",
-    body: "أنظمة قديمة لا تواكب متطلبات المرحلة الثانية للفاتورة الإلكترونية.",
+    title: "تأخر ZATCA = غرامة ٥٠,٠٠٠ ر.س",
     accent: "from-amber-50 to-amber-100"
   },
   {
     icon: FileClock,
-    title: "تقرير الشهر يوصلك بعد ٢٠ يوم من نهايته",
-    body: "تاخذ قرارات الشهر القادم ببيانات الشهر اللي راح. متأخر دائماً.",
+    title: "تقرير الشهر يوصلك متأخر ٢٠ يوم",
     accent: "from-sky-50 to-sky-100"
   },
   {
     icon: EyeOff,
-    title: "ما تعرف ربحيتك الحقيقية إلا في آخر السنة",
-    body: "بدون عمق ERP حقيقي، الربحية على مستوى الفرع أو المنتج تبقى غامضة.",
+    title: "ربحيتك الحقيقية مجهولة طول السنة",
     accent: "from-slate-50 to-slate-100"
   }
 ];
@@ -37,12 +33,8 @@ export function Problem() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">الواقع اليوم</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            كل صاحب عمل سعودي يعرف هالمعاناة
+            معاناة كل صاحب عمل سعودي.
           </h2>
-          <p className="mt-5 text-lg leading-loose text-ink-muted">
-            المحاسبة التقليدية ما عادت كافية لإيقاع السوق. هذي أربع مشاكل
-            تسمعها كل يوم من أصحاب المنشآت.
-          </p>
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -63,9 +55,6 @@ export function Problem() {
               <h3 className="mt-5 text-base font-bold leading-relaxed text-navy">
                 {p.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink-muted">
-                {p.body}
-              </p>
             </motion.div>
           ))}
         </div>

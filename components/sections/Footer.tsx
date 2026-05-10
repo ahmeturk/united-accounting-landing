@@ -41,10 +41,6 @@ export function Footer() {
           {/* Brand col */}
           <div className="col-span-2 sm:col-span-1">
             <Logo variant="dark" />
-            <p className="mt-5 text-sm leading-relaxed text-ink-muted">
-              منصة محاسبية ذكية للمنشآت السعودية. مبنية في الرياض، مدعومة
-              بمحاسبين سعوديين معتمدين.
-            </p>
           </div>
 
           {cols.map((c) => (

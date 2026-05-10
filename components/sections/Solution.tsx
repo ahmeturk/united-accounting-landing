@@ -7,15 +7,13 @@ const pillars = [
   {
     icon: Sparkles,
     eyebrow: "الطبقة الأولى",
-    title: "الذكاء الاصطناعي يشتغل الشغل المتكرر",
-    body: "قراءة الفواتير بالـ OCR، تصنيف العمليات، المطابقة البنكية، وإعداد إقرارات ZATCA — كله يحدث خلف الكواليس بدون تدخل.",
+    title: "AI يتولى المتكرر",
     bullets: ["OCR للفواتير", "مطابقة بنكية تلقائية", "إقرارات ضريبية مهيأة"]
   },
   {
     icon: UserCheck,
     eyebrow: "الطبقة الثانية",
-    title: "المحاسب البشري يتولى المعقد",
-    body: "محاسبون سعوديون معتمدون من SOCPA يراجعون، يستشيرون، ويقومون بتمثيلك أمام ZATCA عند الحاجة.",
+    title: "محاسب SOCPA للمعقّد",
     bullets: [
       "استشارات مالية وضريبية",
       "قوائم موقعة من محاسب قانوني",
@@ -25,8 +23,7 @@ const pillars = [
   {
     icon: LineChart,
     eyebrow: "الطبقة الثالثة",
-    title: "أنت تعرف وضعك في أي لحظة",
-    body: "تقارير لحظية على جوالك، تنبيهات ذكية لما يحصل شي مهم، وتوقعات للتدفقات النقدية للأشهر القادمة.",
+    title: "أنت تعرف وضعك لحظياً",
     bullets: ["تقارير لحظية", "تنبيهات ذكية", "توقعات تدفق نقدي"]
   }
 ];
@@ -38,12 +35,8 @@ export function Solution() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">الحل</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            ثلاث طبقات تشتغل لحالها
+            ثلاث طبقات. تشتغل لحالها.
           </h2>
-          <p className="mt-5 text-lg leading-loose text-ink-muted">
-            نموذجنا يجمع بين أتمتة الذكاء الاصطناعي، خبرة المحاسب البشري،
-            ووضوح البيانات اللحظية — كل واحدة تكمّل الثانية.
-          </p>
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -71,9 +64,6 @@ export function Solution() {
               <h3 className="mt-2 text-xl font-bold leading-snug text-navy">
                 {p.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink-muted">
-                {p.body}
-              </p>
 
               <ul className="mt-6 space-y-2 border-t border-navy/5 pt-5">
                 {p.bullets.map((b) => (

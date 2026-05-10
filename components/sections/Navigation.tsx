@@ -57,8 +57,8 @@ export function Navigation() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a href="#contact" className="btn-primary hidden sm:inline-flex">
-            احجز عرض تجريبي
+          <a href="#login" className="btn-primary hidden sm:inline-flex">
+            تسجيل الدخول
           </a>
           <button
             className="lg:hidden rounded-xl p-2 text-navy hover:bg-navy-50"
@@ -86,11 +86,11 @@ export function Navigation() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="#login"
               onClick={() => setOpen(false)}
               className="btn-primary mt-2 w-full"
             >
-              احجز عرض تجريبي
+              تسجيل الدخول
             </a>
           </div>
         </div>
