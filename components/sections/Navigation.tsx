@@ -10,7 +10,7 @@ const links = [
   { href: "#features", label: "المميزات" },
   { href: "#pricing", label: "الباقات" },
   { href: "#faq", label: "الأسئلة" },
-  { href: "#contact", label: "تواصل" }
+  { href: "mailto:hello@idham.sa", label: "تواصل" }
 ];
 
 export function Navigation() {

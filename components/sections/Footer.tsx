@@ -18,7 +18,7 @@ const cols = [
       { label: "عن إدهام", href: "#" },
       { label: "وظائف", href: "#" },
       { label: "الشركاء", href: "#" },
-      { label: "اتصل بنا", href: "#contact" }
+      { label: "اتصل بنا", href: "mailto:hello@idham.sa" }
     ]
   },
   {

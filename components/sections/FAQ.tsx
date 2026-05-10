@@ -44,7 +44,7 @@ export function FAQ() {
               أسئلة شائعة.
             </h2>
             <a
-              href="#contact"
+              href="mailto:hello@idham.sa"
               className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
             >
               ← اسأل سؤالك

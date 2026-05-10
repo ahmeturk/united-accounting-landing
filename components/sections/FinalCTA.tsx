@@ -5,10 +5,7 @@ import { LogIn, ArrowLeft } from "lucide-react";
 
 export function FinalCTA() {
   return (
-    <section
-      id="contact"
-      className="relative overflow-hidden bg-navy py-24 text-white sm:py-28"
-    >
+    <section className="relative overflow-hidden bg-navy py-24 text-white sm:py-28">
       {/* Decorative blobs */}
       <div
         className="pointer-events-none absolute -top-32 right-1/4 h-72 w-72 rounded-full bg-teal-500/15 blur-3xl"
