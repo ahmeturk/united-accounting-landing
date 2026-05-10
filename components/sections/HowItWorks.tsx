@@ -59,8 +59,8 @@ function StepCard({ step, index }: { step: Step; index: number }) {
       <div className="card card-hover relative flex flex-col items-center p-7 text-center">
         {/* Step circle — sits above card */}
         <div className="relative z-10 -mt-14 flex h-16 w-16 items-center justify-center rounded-full bg-sand-50 ring-4 ring-sand-50">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-navy text-white font-latin text-lg font-bold shadow-warm-lift">
-            <span className="nums-ar">{step.n}</span>
+          <div className="num-mono flex h-14 w-14 items-center justify-center rounded-full bg-navy text-2xl font-semibold text-clay-300 shadow-warm-lift">
+            {step.n}
           </div>
         </div>
 

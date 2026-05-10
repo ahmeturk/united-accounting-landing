@@ -48,7 +48,7 @@ export function TrustBar() {
           {badges.map((b) => (
             <div
               key={b.label}
-              className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-navy ring-1 ring-navy/10 shadow-soft"
+              className="inline-flex items-center gap-2 rounded-full bg-ivory-50 px-4 py-2 text-sm font-medium text-navy ring-1 ring-ink/10 shadow-warm-soft"
             >
               <b.icon className="h-4 w-4 text-teal-600" />
               {b.label}

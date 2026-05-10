@@ -7,28 +7,28 @@ const pains = [
   {
     icon: Clock,
     title: "ساعات في إدخال فواتير يدوي",
-    accent: "from-rose-50 to-rose-100"
+    metric: "−١٢ ساعة / أسبوع"
   },
   {
     icon: AlertTriangle,
     title: "تأخر ZATCA = غرامة ٥٠,٠٠٠ ر.س",
-    accent: "from-amber-50 to-amber-100"
+    metric: "غرامة محتملة"
   },
   {
     icon: FileClock,
     title: "تقرير الشهر يوصلك متأخر ٢٠ يوم",
-    accent: "from-sky-50 to-sky-100"
+    metric: "+٢٠ يوم تأخير"
   },
   {
     icon: EyeOff,
     title: "ربحيتك الحقيقية مجهولة طول السنة",
-    accent: "from-slate-50 to-slate-100"
+    metric: "صفر رؤية"
   }
 ];
 
 export function Problem() {
   return (
-    <section id="platform" className="section bg-white">
+    <section id="platform" className="section bg-ivory-100">
       <div className="container-prose">
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">الواقع اليوم</span>
@@ -47,14 +47,15 @@ export function Problem() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="card card-hover p-6"
             >
-              <div
-                className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br ${p.accent} text-navy`}
-              >
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-clay-50 text-clay-500 ring-1 ring-clay-100">
                 <p.icon className="h-5 w-5" />
               </div>
               <h3 className="mt-5 text-base font-bold leading-relaxed text-navy">
                 {p.title}
               </h3>
+              <div className="mt-4 inline-flex items-center font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-clay-500">
+                {p.metric}
+              </div>
             </motion.div>
           ))}
         </div>

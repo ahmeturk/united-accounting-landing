@@ -35,7 +35,7 @@ const cols = [
 
 export function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-ivory-100">
       <div className="container-prose pt-20 pb-10">
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-4 lg:gap-16">
           {/* Brand col */}
@@ -65,7 +65,7 @@ export function Footer() {
         {/* Contact band */}
         <div className="mt-14 grid grid-cols-1 gap-4 rounded-2xl bg-sand-50 p-6 sm:grid-cols-3">
           <div className="flex items-center gap-3 text-sm text-navy">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white ring-1 ring-navy/5">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-ivory-50 ring-1 ring-ink/5">
               <Mail className="h-4 w-4 text-teal-600" />
             </span>
             <a
@@ -76,7 +76,7 @@ export function Footer() {
             </a>
           </div>
           <div className="flex items-center gap-3 text-sm text-navy">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white ring-1 ring-navy/5">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-ivory-50 ring-1 ring-ink/5">
               <Phone className="h-4 w-4 text-teal-600" />
             </span>
             <a href="tel:+966800000000" className="font-medium hover:underline" dir="ltr">
@@ -84,7 +84,7 @@ export function Footer() {
             </a>
           </div>
           <div className="flex items-center gap-3 text-sm text-navy">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white ring-1 ring-navy/5">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-ivory-50 ring-1 ring-ink/5">
               <MapPin className="h-4 w-4 text-teal-600" />
             </span>
             <span className="font-medium">الرياض، المملكة العربية السعودية</span>

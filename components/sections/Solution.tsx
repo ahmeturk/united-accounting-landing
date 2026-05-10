@@ -65,7 +65,7 @@ export function Solution() {
                 {p.title}
               </h3>
 
-              <ul className="mt-6 space-y-2 border-t border-navy/5 pt-5">
+              <ul className="mt-6 space-y-2 border-t border-ink/8 pt-5">
                 {p.bullets.map((b) => (
                   <li
                     key={b}

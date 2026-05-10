@@ -29,7 +29,7 @@ export function Navigation() {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "border-b border-navy/5 bg-white/85 backdrop-blur-md"
+          ? "border-b border-ink/5 bg-ivory-100/85 backdrop-blur-md"
           : "bg-transparent"
       )}
     >
@@ -73,7 +73,7 @@ export function Navigation() {
 
       {/* Mobile sheet */}
       {open && (
-        <div className="lg:hidden border-t border-navy/5 bg-white">
+        <div className="lg:hidden border-t border-ink/5 bg-ivory-100">
           <div className="container-prose flex flex-col gap-1 py-4">
             {links.map((l) => (
               <a

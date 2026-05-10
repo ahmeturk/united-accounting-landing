@@ -83,10 +83,10 @@ export function Pricing() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className={cn(
-                "relative flex flex-col rounded-3xl bg-white p-8 ring-1 transition-all shine",
+                "relative flex flex-col rounded-3xl bg-ivory-50 p-8 ring-1 transition-all shine",
                 t.highlight
-                  ? "ring-2 ring-teal-500 shadow-lift lg:scale-[1.04] lg:-mt-2"
-                  : "ring-navy/10 shadow-soft hover:shadow-lift hover:-translate-y-0.5"
+                  ? "ring-2 ring-teal-500 shadow-warm-lift lg:scale-[1.04] lg:-mt-2"
+                  : "ring-ink/10 shadow-warm-soft hover:shadow-warm-lift hover:-translate-y-0.5"
               )}
             >
               {t.highlight && (
@@ -108,7 +108,7 @@ export function Pricing() {
                 {t.audience}
               </p>
 
-              <div className="mt-6 flex items-baseline gap-2 border-y border-navy/5 py-6">
+              <div className="mt-6 flex items-baseline gap-2 border-y border-ink/8 py-6">
                 <span className="text-xs font-medium text-ink-muted">
                   ابتداءً من
                 </span>
@@ -144,7 +144,7 @@ export function Pricing() {
                 className={cn(
                   "mt-8 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all",
                   t.highlight
-                    ? "bg-teal-500 text-white shadow-soft hover:bg-teal-600 hover:shadow-glow"
+                    ? "bg-teal-500 text-white shadow-warm-soft hover:bg-teal-600 hover:shadow-glow"
                     : "bg-navy text-white hover:bg-navy-700"
                 )}
               >

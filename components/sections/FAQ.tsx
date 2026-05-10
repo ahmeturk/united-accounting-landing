@@ -35,7 +35,7 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="section bg-white">
+    <section id="faq" className="section bg-ivory-100">
       <div className="container-prose">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
@@ -52,7 +52,7 @@ export function FAQ() {
           </div>
 
           <div className="lg:col-span-8">
-            <ul className="divide-y divide-navy/10 rounded-2xl bg-white ring-1 ring-navy/10 shadow-soft">
+            <ul className="divide-y divide-ink/10 rounded-2xl bg-ivory-50 ring-1 ring-ink/8 shadow-warm-soft">
               {faqs.map((f, i) => {
                 const isOpen = open === i;
                 return (
