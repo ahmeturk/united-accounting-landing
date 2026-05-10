@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Quote } from "lucide-react";
 
 const hero = {
   quote:
@@ -40,7 +39,7 @@ export function SocialProof() {
           </h2>
         </div>
 
-        {/* Hero pull-quote — massive editorial type */}
+        {/* Hero pull-quote — editorial Arabic typography */}
         <motion.figure
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -48,23 +47,26 @@ export function SocialProof() {
           transition={{ duration: 0.7 }}
           className="relative mx-auto mt-16 max-w-4xl"
         >
-          {/* Oversized decorative quote glyph */}
-          <Quote
-            className="pointer-events-none absolute -top-8 end-0 h-24 w-24 text-clay-100 sm:h-32 sm:w-32"
+          {/* Decorative oversized opening bracket */}
+          <span
             aria-hidden
-          />
+            className="pointer-events-none absolute -top-8 -end-2 select-none text-[8rem] font-light leading-none text-clay-200 sm:-top-12 sm:text-[10rem]"
+          >
+            «
+          </span>
 
-          <blockquote className="relative font-display text-3xl font-light leading-[1.4] tracking-tight text-navy sm:text-4xl lg:text-[2.75rem] lg:leading-[1.35]">
-            <span aria-hidden className="text-clay-500">«</span>
+          {/*
+            Arabic editorial feel comes from light weight + generous leading,
+            NOT serif (Latin-only fonts like Fraunces don't render Arabic).
+          */}
+          <blockquote className="relative text-2xl font-light leading-[1.7] text-navy sm:text-[1.75rem] sm:leading-[1.7] lg:text-4xl lg:leading-[1.55]">
             {hero.quote}
-            <span aria-hidden className="text-clay-500">»</span>
           </blockquote>
 
-          <figcaption className="mt-10 flex items-center gap-4">
-            {/* Editorial separator */}
+          <figcaption className="mt-10 flex flex-wrap items-center gap-4">
             <span className="h-px w-12 bg-clay-500" aria-hidden />
             <div className="leading-tight">
-              <div className="text-sm font-bold text-navy">{hero.name}</div>
+              <div className="text-sm font-semibold text-navy">{hero.name}</div>
               <div className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-subtle mt-1">
                 {hero.role} · {hero.company}
               </div>
@@ -86,8 +88,8 @@ export function SocialProof() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="border-t border-ink/10 pt-7"
             >
-              <blockquote className="text-base leading-loose text-navy lg:text-lg">
-                «{t.quote}»
+              <blockquote className="text-base font-light leading-[1.85] text-navy lg:text-lg">
+                {t.quote}
               </blockquote>
               <figcaption className="mt-5 flex items-center gap-3">
                 <span className="h-px w-8 bg-clay-500/60" aria-hidden />
