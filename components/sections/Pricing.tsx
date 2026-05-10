@@ -90,7 +90,7 @@ export function Pricing() {
               )}
             >
               {t.highlight && (
-                <div className="absolute -top-4 right-1/2 translate-x-1/2 flex items-center gap-1.5 rounded-full bg-teal-500 px-4 py-1.5 text-xs font-bold text-white shadow-glow">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 rounded-full bg-teal-500 px-4 py-1.5 text-xs font-bold text-white shadow-glow whitespace-nowrap">
                   <Sparkles className="h-3.5 w-3.5" />
                   ★ الأكثر طلباً
                 </div>
