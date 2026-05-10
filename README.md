@@ -1,8 +1,8 @@
-# United Accounting — Landing Page
+# إدهام — Landing Page
 
 > معنا… حساباتك أسهل
 
-High-converting, RTL-first landing page for **United Accounting** — an AI-powered accounting platform for Saudi SMEs.
+High-converting, RTL-first landing page for **إدهام (Idham)** — an AI-powered accounting platform for Saudi SMEs.
 
 Built with Next.js 14 App Router, TypeScript, Tailwind CSS, Framer Motion, and shadcn-style primitives.
 
@@ -42,7 +42,7 @@ npm run lint    # next lint
 ## Project Structure
 
 ```
-united-accounting-landing/
+idham-landing/
 ├── app/
 │   ├── api/placeholder/[...slug]/route.ts   # SVG placeholder service
 │   ├── globals.css                          # Tailwind + base/components/utilities
@@ -131,4 +131,4 @@ None required to ship the marketing page. When you wire up the demo-booking form
 
 ## License
 
-© 2026 United Accounting. All rights reserved.
+© 2026 Idham. All rights reserved.

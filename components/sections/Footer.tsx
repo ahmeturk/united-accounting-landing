@@ -15,7 +15,7 @@ const cols = [
   {
     title: "الشركة",
     links: [
-      { label: "عن United Accounting", href: "#" },
+      { label: "عن إدهام", href: "#" },
       { label: "وظائف", href: "#" },
       { label: "الشركاء", href: "#" },
       { label: "اتصل بنا", href: "#contact" }
@@ -69,10 +69,10 @@ export function Footer() {
               <Mail className="h-4 w-4 text-teal-600" />
             </span>
             <a
-              href="mailto:hello@unitedaccounting.sa"
+              href="mailto:hello@idham.sa"
               className="font-medium hover:underline"
             >
-              hello@unitedaccounting.sa
+              hello@idham.sa
             </a>
           </div>
           <div className="flex items-center gap-3 text-sm text-navy">
@@ -95,7 +95,7 @@ export function Footer() {
 
         <div className="mt-6 flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-xs text-ink-muted">
-            © ٢٠٢٦ United Accounting. جميع الحقوق محفوظة. سجل تجاري ١٠١٠XXXXXX
+            © ٢٠٢٦ إدهام. جميع الحقوق محفوظة. سجل تجاري ١٠١٠XXXXXX
           </p>
           <div className="flex items-center gap-6 text-xs text-ink-muted">
             <a href="#" className="hover:text-navy transition-colors">

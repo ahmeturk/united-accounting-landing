@@ -1,15 +1,16 @@
 import { cn } from "@/lib/utils";
 
 /**
- * United Accounting brand mark — interlocking S-monogram inspired by the
- * official lockup. Single source of truth for the brand identity.
+ * Idham brand mark — stepped tower silhouette referencing Najdi mud-brick
+ * architecture (e.g. Diriyah). Two stacked rounded blocks, the smaller
+ * perched atop and offset toward the start side. Reads simultaneously
+ * as architectural form and as modular "data blocks."
  *
- * The monogram uses `currentColor` so it inverts cleanly on dark/light
- * surfaces. Pair with `<Wordmark/>` for the full lockup.
+ * Uses `currentColor` so it inverts cleanly on dark/light surfaces.
  */
 export function Monogram({
   className,
-  title = "United Accounting"
+  title = "إدهام"
 }: {
   className?: string;
   title?: string;
@@ -20,18 +21,13 @@ export function Monogram({
       role="img"
       aria-label={title}
       className={cn("h-full w-full", className)}
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={6}
-      strokeLinecap="round"
+      fill="currentColor"
     >
       <title>{title}</title>
-      {/* Top arc — opens to the right */}
-      <path d="M44 18 C 44 10, 32 10, 32 18 C 32 26, 44 26, 44 32" />
-      {/* Bottom arc — opens to the left, interlocks with the top */}
-      <path d="M20 46 C 20 54, 32 54, 32 46 C 32 38, 20 38, 20 32" />
-      {/* Centre seam */}
-      <path d="M32 18 L 32 46" opacity="0.0" />
+      {/* Larger lower block */}
+      <rect x="10" y="30" width="42" height="22" rx="4" />
+      {/* Upper block — offset toward the start (right in RTL) */}
+      <rect x="30" y="12" width="22" height="18" rx="4" />
     </svg>
   );
 }
@@ -39,9 +35,7 @@ export function Monogram({
 type LogoProps = {
   /** "dark" = white mark on navy plate, "light" = navy mark on white plate */
   variant?: "dark" | "light";
-  /** show wordmark + tagline alongside the monogram */
   showWordmark?: boolean;
-  /** show the Arabic tagline under the wordmark */
   showTagline?: boolean;
   className?: string;
 };
@@ -61,7 +55,7 @@ export function Logo({
     <div className={cn("flex items-center gap-3", className)}>
       <div
         className={cn(
-          "flex h-11 w-11 flex-none items-center justify-center rounded-xl shadow-soft transition-transform",
+          "flex h-11 w-11 flex-none items-center justify-center rounded-xl shadow-warm-soft transition-transform",
           plateClasses
         )}
       >
@@ -70,14 +64,16 @@ export function Logo({
 
       {showWordmark && (
         <div className="leading-tight">
-          <div className="font-latin text-[15px] font-light uppercase tracking-[0.18em] text-navy">
-            United
-            <span className="ms-1.5 font-bold tracking-tight normal-case">
-              Accounting
+          <div className="flex items-baseline gap-2">
+            <span className="text-xl font-bold tracking-tight text-navy">
+              إدهام
+            </span>
+            <span className="font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-ink-subtle">
+              IDHAM
             </span>
           </div>
           {showTagline && (
-            <div className="text-[11px] text-ink-muted">
+            <div className="text-[11px] text-ink-muted mt-0.5">
               معنا… حساباتك أسهل
             </div>
           )}

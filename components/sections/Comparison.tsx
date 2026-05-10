@@ -101,7 +101,7 @@ export function Comparison() {
                 <Sparkles className="h-3 w-3" />
                 نحن
               </span>
-              <div className="text-sm font-bold text-navy">United Accounting</div>
+              <div className="text-sm font-bold text-navy">إدهام</div>
             </div>
 
             {/* Active competitor column header */}

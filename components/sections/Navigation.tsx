@@ -37,7 +37,7 @@ export function Navigation() {
         {/* Brand — visually first on the right in RTL */}
         <a
           href="#"
-          aria-label="United Accounting — الصفحة الرئيسية"
+          aria-label="إدهام — الصفحة الرئيسية"
           className="group transition-transform hover:scale-[1.02]"
         >
           <Logo variant="dark" />

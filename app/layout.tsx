@@ -38,13 +38,13 @@ const jbm = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://unitedaccounting.sa"),
+  metadataBase: new URL("https://idham.sa"),
   title: {
-    default: "United Accounting — معنا… حساباتك أسهل",
-    template: "%s · United Accounting"
+    default: "إدهام — معنا… حساباتك أسهل",
+    template: "%s · إدهام"
   },
   description:
-    "أول منصة محاسبية ذكية في المملكة، مبنية على الذكاء الاصطناعي ومدعومة بمحاسبين سعوديين معتمدين. متوافقة مع ZATCA Phase 2 وSOCPA.",
+    "منصة محاسبة سعودية بذكاء اصطناعي، يدعمها محاسبون معتمدون من SOCPA. متوافقة بالكامل مع ZATCA Phase 2.",
   keywords: [
     "محاسبة",
     "ذكاء اصطناعي",
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
     "SOCPA",
     "السعودية",
     "محاسبة سحابية",
-    "United Accounting",
-    "يونايتد للمحاسبة"
+    "إدهام",
+    "Idham"
   ],
   openGraph: {
-    title: "United Accounting — معنا… حساباتك أسهل",
+    title: "إدهام — معنا… حساباتك أسهل",
     description:
-      "أول منصة محاسبية ذكية في المملكة، مبنية على الذكاء الاصطناعي ومدعومة بمحاسبين سعوديين معتمدين.",
+      "منصة محاسبة سعودية بذكاء اصطناعي، يدعمها محاسبون معتمدون من SOCPA.",
     type: "website",
     locale: "ar_SA"
   },
