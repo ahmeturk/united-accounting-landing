@@ -57,7 +57,7 @@ export function Navigation() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a href="#login" className="btn-primary hidden sm:inline-flex">
+          <a href="/login" className="btn-primary hidden sm:inline-flex">
             تسجيل الدخول
           </a>
           <button
@@ -86,7 +86,7 @@ export function Navigation() {
               </a>
             ))}
             <a
-              href="#login"
+              href="/login"
               onClick={() => setOpen(false)}
               className="btn-primary mt-2 w-full"
             >

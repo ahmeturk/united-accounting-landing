@@ -67,11 +67,11 @@ export function SocialProof() {
             <span className="h-px w-12 bg-clay-500" aria-hidden />
             <div className="leading-tight">
               <div className="text-sm font-semibold text-navy">{hero.name}</div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-subtle mt-1">
+              <div className="text-xs text-ink-subtle mt-1">
                 {hero.role} · {hero.company}
               </div>
             </div>
-            <span className="ms-auto rounded-full bg-clay-50 px-3 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-clay-700 ring-1 ring-clay-100">
+            <span className="ms-auto rounded-full bg-clay-50 px-3 py-1 text-xs font-semibold text-clay-700 ring-1 ring-clay-100">
               {hero.industry}
             </span>
           </figcaption>
@@ -97,11 +97,11 @@ export function SocialProof() {
                   <div className="text-sm font-semibold text-navy">
                     {t.name}
                   </div>
-                  <div className="font-mono text-[10px] uppercase tracking-[0.16em] text-ink-subtle mt-1">
+                  <div className="text-xs text-ink-subtle mt-1">
                     {t.role} · {t.company}
                   </div>
                 </div>
-                <span className="ms-auto font-mono text-[10px] uppercase tracking-[0.18em] text-ink-subtle">
+                <span className="ms-auto text-xs text-ink-subtle">
                   {t.industry}
                 </span>
               </figcaption>

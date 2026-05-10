@@ -33,7 +33,7 @@ export function Problem() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">الواقع اليوم</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl">
-            معاناة كل صاحب عمل سعودي.
+            معاناة كل صاحب اعمال في السعودية.
           </h2>
         </div>
 
@@ -53,7 +53,7 @@ export function Problem() {
               <h3 className="mt-5 text-base font-bold leading-relaxed text-navy">
                 {p.title}
               </h3>
-              <div className="mt-4 inline-flex items-center font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-clay-500">
+              <div className="mt-4 inline-flex items-center text-xs font-semibold text-clay-500">
                 {p.metric}
               </div>
             </motion.div>

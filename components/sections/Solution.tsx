@@ -58,7 +58,7 @@ export function Solution() {
                 <p.icon className="h-6 w-6" />
               </div>
 
-              <div className="mt-6 text-xs font-semibold uppercase tracking-wider text-teal-700">
+              <div className="mt-6 text-xs font-semibold text-teal-700">
                 {p.eyebrow}
               </div>
               <h3 className="mt-2 text-xl font-bold leading-snug text-navy">

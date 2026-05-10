@@ -137,7 +137,8 @@ function CardHeader({
         <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-clay-50 text-clay-500 ring-1 ring-clay-100 transition-colors group-hover:bg-clay-100">
           <Icon className="h-5 w-5" />
         </div>
-        <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-ink-subtle">
+        {/* Badge — drop tracking/uppercase since most badges are Arabic */}
+        <span className="font-mono text-[10px] font-semibold text-ink-subtle">
           {badge}
         </span>
       </div>

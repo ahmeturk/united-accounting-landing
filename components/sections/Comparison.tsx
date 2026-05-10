@@ -58,7 +58,7 @@ export function Comparison() {
 
         {/* Competitor tabs */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-2">
-          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-subtle me-2">
+          <span className="text-xs font-medium text-ink-subtle me-2">
             مقارنة مع
           </span>
           {competitors.map((c) => {
@@ -91,7 +91,7 @@ export function Comparison() {
         >
           {/* Header row — UA + active competitor */}
           <div className="grid grid-cols-[1fr_1fr_1fr] border-b border-ink/8 bg-ivory-100/60">
-            <div className="px-5 py-5 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-subtle">
+            <div className="px-5 py-5 text-xs font-semibold text-ink-subtle">
               المعيار
             </div>
 
@@ -158,7 +158,7 @@ export function Comparison() {
           ))}
         </motion.div>
 
-        <p className="mt-6 text-center font-mono text-[10px] uppercase tracking-[0.18em] text-ink-subtle">
+        <p className="mt-6 text-center text-xs text-ink-subtle">
           ✓ مكتمل · — جزئي · ✗ غير متوفر
         </p>
       </div>

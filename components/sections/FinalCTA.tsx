@@ -43,14 +43,14 @@ export function FinalCTA() {
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           <a
-            href="#login"
+            href="/login"
             className="inline-flex items-center gap-2 rounded-full bg-teal-500 px-7 py-4 text-base font-bold text-white shadow-glow transition-all hover:bg-teal-400 active:scale-[0.98]"
           >
             <LogIn className="h-4 w-4" />
             تسجيل الدخول
           </a>
           <a
-            href="#signup"
+            href="/login"
             className="inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-4 text-base font-semibold text-white ring-1 ring-inset ring-white/15 transition-colors hover:bg-white/15"
           >
             حساب جديد

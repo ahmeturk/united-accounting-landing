@@ -64,13 +64,8 @@ export function Logo({
 
       {showWordmark && (
         <div className="leading-tight">
-          <div className="flex items-baseline gap-2">
-            <span className="text-xl font-bold tracking-tight text-navy">
-              إدهام
-            </span>
-            <span className="font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-ink-subtle">
-              IDHAM
-            </span>
+          <div className="text-xl font-bold tracking-tight text-navy">
+            إدهام
           </div>
           {showTagline && (
             <div className="text-[11px] text-ink-muted mt-0.5">

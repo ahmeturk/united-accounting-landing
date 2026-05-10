@@ -30,7 +30,7 @@ export function StatsBand() {
         {/* Editorial section label */}
         <div className="mb-10 flex items-center gap-3">
           <span className="h-px w-10 bg-clay-500" aria-hidden />
-          <span className="font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-clay-500">
+          <span className="text-xs font-semibold text-clay-500">
             قياسات لحظية
           </span>
         </div>
@@ -78,7 +78,8 @@ function StatCell({ stat, index }: { stat: Stat; index: number }) {
           </span>
         )}
       </div>
-      <div className="mt-3 text-xs uppercase tracking-[0.14em] text-ink-subtle sm:text-sm sm:tracking-[0.18em]">
+      {/* Arabic label — no letter-spacing (breaks cursive joining) */}
+      <div className="mt-3 text-xs text-ink-subtle sm:text-sm">
         {stat.label}
       </div>
     </motion.div>

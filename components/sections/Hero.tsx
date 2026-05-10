@@ -51,12 +51,8 @@ function CopyBlock() {
         كل أرقامك.
         <br />
         تحت{" "}
-        <span className="relative inline-block">
+        <span className="underline decoration-clay-500/80 decoration-[4px] underline-offset-[10px]">
           إيدك.
-          <span
-            className="absolute -bottom-2 left-0 right-0 h-[3px] origin-right rounded-full bg-clay-500/80"
-            aria-hidden
-          />
         </span>
       </motion.h1>
 
@@ -77,7 +73,7 @@ function CopyBlock() {
         transition={{ duration: 0.7, delay: 0.2 }}
         className="mt-10 flex flex-wrap items-center gap-3"
       >
-        <a href="#signup" className="btn-accent group">
+        <a href="/login" className="btn-accent group">
           ابدأ حسابك
           <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
         </a>
@@ -126,7 +122,7 @@ function OperatingConsole() {
         {/* Hero number block */}
         <div className="px-7 pt-8 pb-6 sm:px-9">
           <div className="flex items-baseline justify-between">
-            <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-subtle">
+            <span className="font-mono text-[11px] text-ink-subtle">
               صافي الربح · مايو ٢٠٢٦
             </span>
             <span className="inline-flex items-center gap-1 rounded-full bg-teal-50 px-2.5 py-0.5 font-mono text-[11px] font-semibold text-teal-700">
@@ -202,7 +198,8 @@ function Kpi({
       >
         {value}
       </div>
-      <div className="mt-1 text-[10px] uppercase tracking-[0.14em] text-ink-subtle">
+      {/* Arabic content — no letter-spacing (it breaks cursive joining) */}
+      <div className="mt-1 text-[11px] text-ink-subtle">
         {label}
       </div>
     </div>

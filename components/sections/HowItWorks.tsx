@@ -242,7 +242,7 @@ function ReportsPreview() {
   return (
     <div className="rounded-xl bg-ivory-100 ring-1 ring-ink/8 p-3 text-start">
       <div className="flex items-baseline justify-between">
-        <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-ink-subtle">
+        <span className="text-[11px] text-ink-subtle">
           صافي الربح
         </span>
         <span className="rounded-full bg-teal-50 px-1.5 py-0.5 font-mono text-[9px] font-bold text-teal-700">
