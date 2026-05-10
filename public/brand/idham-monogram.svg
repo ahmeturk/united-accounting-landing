@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="إدهام" fill="#0B1E3F">
+  <title>إدهام</title>
+  <!-- Alif body — vertical stroke -->
+  <rect x="28" y="12" width="8" height="34" rx="2"/>
+  <!-- Hamza dot -->
+  <circle cx="32" cy="53" r="3.5"/>
+</svg>

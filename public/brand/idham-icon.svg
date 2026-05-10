@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="إدهام">
+  <title>إدهام</title>
+  <!-- Navy plate with rounded corners -->
+  <rect width="256" height="256" rx="56" fill="#0B1E3F"/>
+  <!-- Monogram (designed in 0-64 viewBox), scaled 3× and centred. -->
+  <g transform="translate(32 32) scale(3)" fill="#FFFFFF">
+    <rect x="28" y="12" width="8" height="34" rx="2"/>
+    <circle cx="32" cy="53" r="3.5"/>
+  </g>
+</svg>
